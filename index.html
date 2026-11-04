@@ -10,8 +10,46 @@
 <hr>
       <h2 style=”font-family:calibri:”><b>Conference paper: Why Hydrogen Fuel Cells Are Not Used In Cars</b></h2>
 <hr>
+<style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
 
-      
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        p.ex1 {
+            margin-left: 250px;
+        }
+    </style>
+      <table>
+
+        <tr>
+            <th><h3>Content</h3></th>
+        </tr>
+        <tr>
+            <td><a href="#Abstract">Abstract</a></td>
+        </tr
+        <tr>
+            <td><a href="#Introduction">Introduction</a></td>
+        </tr>
+        <tr>
+            <td><a href="#Analysis And Discussion">Analysis and discussion</a></td>
+        </tr>
+        <tr>
+            <td><a href="#Reference">Reference</a></td>
+        </tr>
+    </table>
       
       
       
@@ -92,7 +130,7 @@
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ReferenceCount + AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
