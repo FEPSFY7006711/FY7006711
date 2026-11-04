@@ -38,9 +38,6 @@
             <th><h3>Content</h3></th>
         </tr>
         <tr>
-            <td><a href="#Abstract">Abstract</a></td>
-        </tr
-        <tr>
             <td><a href="#Introduction">Introduction</a></td>
         </tr>
         <tr>
@@ -50,6 +47,24 @@
             <td><a href="#Reference">Reference</a></td>
         </tr>
     </table>
+
+
+      <hr>
+
+          <h3 id="Introduction">Introduction</h3>
+          <pre id="Introduction_InText">
+    Intro add-in
+          </pre>
+      <h3 id="Analysis And Discussion">Analysis And Discussion</h3>
+    <pre id="Analysis_InText">
+  Analysis Add-in
+    </pre>
+      <h3 id="Reference">Reference</h3>
+          <pre id="Reference_InText">
+    Reference add-in
+          </pre>
+      
+      
       
       
       
@@ -129,8 +144,9 @@
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ReferenceCount = displayWordCount("Reference_InText")
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ReferenceCount + AbstractCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ReferenceCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
