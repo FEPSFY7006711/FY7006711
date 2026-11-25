@@ -73,6 +73,10 @@ industry shift towards new infrastructure and engineering designs.
     <pre id="Analysis_InText">
   Analysis Add-in
     </pre>
+       <h3 id="Conclusion">Conclusion</h3>
+          <pre id="Conclusion_InText">
+            Conclusion add-in
+          </pre>
       <h3 id="Reference">Reference</h3>
           <pre id="Reference_InText">
     Reference add-in
@@ -158,9 +162,10 @@ industry shift towards new infrastructure and engineering designs.
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText")
     const ReferenceCount = displayWordCount("Reference_InText")
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ReferenceCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ReferenceCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
